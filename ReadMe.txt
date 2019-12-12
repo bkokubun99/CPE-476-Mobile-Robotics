@@ -30,14 +30,14 @@ Images of Components
 
 
 Task 2: Motor and Encoder Testing - In this task, the team will perform basic tests for the motor (proper forward, backward, right and left motion), and encoder operations. For this task we ran the Encoder test and Motor test. Both tests ran fine.
-	Encoder Test 
-	-https://github.com/jasonvillanuevagit/cpe476/blob/master/RasPiBot202V2/examples/TestEncoders/TestEncoders.ino
-	Motor Test 
-	-https://github.com/jasonvillanuevagit/cpe476/blob/master/RasPiBot202V2/examples/TestMotors/TestMotors.ino
+    Encoder Test 
+    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestEncoders/TestEncoders.ino
+    Motor Test 
+    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestMotors/TestMotors.ino
  
 Task 3: Wheel Calibration (fix systematic errors) - The goal of this task will be to move your robot using built-in commands for a distance of 2 meters. Determine the trim values of the motor such that the robot travels in a straight line. Our robot needed to be calibrated a bit as the right motor was running about 2% faster than the left. Our robot was able to drive straight after minimal calibration to the Motor/Odometer test files. 
-	Odometer Test 
-	-https://github.com/jasonvillanuevagit/cpe476/blob/master/RasPiBot202V2/examples/TestOdometer/TestOdometer.ino
+    Odometer Test 
+    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestOdometer/TestOdometer.ino
 	
 Task 4: Unidirectional & Bidirectional Square Path Experiment - In this task the robot, follows a path comprising of four straight line segments and four pure rotations about the robot's center point, at the corners of the square. The robot's end position visualizes the dead-reckoning error. For this test we had the robot drive straight for a meter, then with trial and error determined the speed/time it would take in order for the robot to turn a perfect 90 degrees using speed of motorA = -speed of motorB. This worked for us and the robot made a perfect square path.
 
