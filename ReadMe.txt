@@ -40,8 +40,13 @@ Task 3: Wheel Calibration (fix systematic errors) - The goal of this task will b
 	-https://github.com/jasonvillanuevagit/cpe476/blob/master/RasPiBot202V2/examples/TestOdometer/TestOdometer.ino
 	
 Task 4: Unidirectional & Bidirectional Square Path Experiment - In this task the robot, follows a path comprising of four straight line segments and four pure rotations about the robot's center point, at the corners of the square. The robot's end position visualizes the dead-reckoning error. For this test we had the robot drive straight for a meter, then with trial and error determined the speed/time it would take in order for the robot to turn a perfect 90 degrees using speed of motorA = -speed of motorB. This worked for us and the robot made a perfect square path.
+
 Task 5: PID Control - Implement PID control to offset unknown tracking errors. Use supplied K values. You can modify them later. For this test we ran the PID example found here https://gist.github.com/bradley219/5373998. With a few modifications it ran.
+
 Task 6: Dead Reckoning - Using the of motor encoder values, calculate the robot's position and pose for the motor basic test. For this test we used https://github.com/purwar2016/DeadReckoning-library and applied it to the motor test. with many modifications we were able to program our Romi board.
+
 Task 7: Interface IMU: Interface the IMU on the board to get acceleration and gyro values. Create a message including odometry and IMU values and transmit the message to the Host PC and log the data in Rviz. For this task we used https://github.com/pololu/romi-32u4-arduino-library. acceleration was fine. We did have issues with the gyro values at first, but ended up replacing our board for other purposes. After this the gyro values were fine.
+
 Task 8:
+
 Task 9: Setup your RPI: Use the raspberry pi 3+/4 to setup Raspbian + ROS (Kinetic/Melodic) + OpenCV. For the OS on our RPI3 we installed Ubiquity's https://downloads.ubiquityrobotics.com/pi.html. This made the process very simple. We then expanded the memory, enabled ssh, and made other changes to settings following along in class.
