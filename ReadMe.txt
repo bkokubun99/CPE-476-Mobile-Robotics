@@ -49,7 +49,7 @@ Task 4: Unidirectional & Bidirectional Square Path Experiment - In this task the
 
 Task 5: PID Control - Implement PID control to offset unknown tracking errors. Use supplied K values. You can modify them later. 
 -For this task we ran the PID example found here https://gist.github.com/bradley219/5373998. With a few modifications it ran.
-    PID Test:
+    PID Test:PID program, allowed us to offset unknown tracking errors. 
     -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/PID/pid.cpp
 
 Task 6: Dead Reckoning - Using the of motor encoder values, calculate the robot's position and pose for the motor basic test. 
