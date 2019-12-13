@@ -34,14 +34,16 @@ Task 2: Motor and Encoder Testing - In this task, the team will perform basic te
     Encoder Test: For this test, we ran a program that received feedback data from the encoders 
     which told us how far the wheels are turning and in which direction 
     -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestEncoders/TestEncoders.ino
-    Motor Test: For this test, we ran a program that allows the Romi to move forward/backward for a 	     particular motor speed when a certain button is pressed 
+    Motor Test: For this test, we ran a program that allows the Romi to move forward/backward for a particular motor speed 
+    when a certain button is pressed 
     -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestMotors/TestMotors.ino
  
 Task 3: Wheel Calibration (fix systematic errors) - The goal of this task will be to move your robot using built-in commands for a distance of 2 meters. Determine the trim values of the motor such that the robot travels in a straight line. 
 - Since the Wheel Motors came factory built, when we ran our Motor Test we noticed that the right motor was spinning at a faster speed than the left motor, about 2% faster. This caused the Romi to veer to the left when it was supposed to go move straight. After minimal calibrations and determining which values to trim, our Romi was able to move in a straight path. 
-	Odometer Test: For this test, we were able to determine the trim values in order for our Romi to         move in a straight path 
+    Odometer Test: For this test, we were able to determine the trim values in order for our Romi to move in a straight path 
     -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestOdometer/TestOdometer.ino
-    Motor Test: For this test, the right motor spinning about 2% faster than the left. Therefore we had     to trim the values of the right motor. 
+    Motor Test: For this test, the right motor spinning about 2% faster than the left. Therefore we had to trim the values of
+    the right motor. 
     -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestMotors/TestMotors.ino
 	
 Task 4: Unidirectional & Bidirectional Square Path Experiment - In this task the robot, follows a path comprising of four straight line segments and four pure rotations about the robot's center point, at the corners of the square. The robot's end position visualizes the dead-reckoning error. 
@@ -57,7 +59,7 @@ Task 6: Dead Reckoning - Using the of motor encoder values, calculate the robot'
 
 Task 7: Interface IMU: Interface the IMU on the board to get acceleration and gyro values. Create a message including odometry and IMU values and transmit the message to the Host PC and log the data in Rviz. 
 -For this task we used https://github.com/pololu/romi-32u4-arduino-library. Acceleration was fine. We did have issues with the gyro values at first, but ended up replacing our board for other purposes. After this the gyro values were fine.
-    Odemetry Test: This Test allowed us to measure the pose of the Romi 
+	Odemetry Test: This Test allowed us to measure the pose of the Romi 
     -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/Romi-RPi-I2CSlave/odometry.ino
 
 Task 8:
