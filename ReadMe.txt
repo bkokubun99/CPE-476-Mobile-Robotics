@@ -31,38 +31,41 @@ Images of Components
 
 Task 2: Motor and Encoder Testing - In this task, the team will perform basic tests for the motor (proper forward, backward, right and left motion), and encoder operations. 
 - For this task we ran the Encoder test and Motor test. Both tests ran fine.
-    Encoder Test: For this test, we ran a program that received feedback data from the encoders 
-    which told us how far the wheels are turning and in which direction 
-    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestEncoders/TestEncoders.ino
-    Motor Test: For this test, we ran a program that allows the Romi to move forward/backward for a particular motor speed 
-    when a certain button is pressed 
-    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestMotors/TestMotors.ino
+	Encoder Test: For this test, we ran a program that received feedback data from the encoders which told us how far the wheels are turning and in which direction 
+	-https://github.com/jasonvillanuevagit/cpe476/blob/master/RasPiBot202V2/examples/TestEncoders/TestEncoders.ino
+	Motor Test: For this test, we ran a program that allows the Romi to move forward/backward for a particular motor speed when a certain button is pressed 
+	-https://github.com/jasonvillanuevagit/cpe476/blob/master/RasPiBot202V2/examples/TestMotors/TestMotors.ino
  
 Task 3: Wheel Calibration (fix systematic errors) - The goal of this task will be to move your robot using built-in commands for a distance of 2 meters. Determine the trim values of the motor such that the robot travels in a straight line. 
 - Since the Wheel Motors came factory built, when we ran our Motor Test we noticed that the right motor was spinning at a faster speed than the left motor, about 2% faster. This caused the Romi to veer to the left when it was supposed to go move straight. After minimal calibrations and determining which values to trim, our Romi was able to move in a straight path. 
-    Odometer Test: For this test, we were able to determine the trim values in order for our Romi to move in a straight path 
-    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestOdometer/TestOdometer.ino
-    Motor Test: For this test, the right motor spinning about 2% faster than the left. Therefore we had to trim the values of
-    the right motor. 
-    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestMotors/TestMotors.ino
+	Odometer Test: For this test, we were able to determine the trim values in order for our Romi to move in a straight path 
+	-https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/RasPiBot202V2/examples/TestOdometer/TestOdometer.ino
+	Encoder Test: We received data feedback from the encoders which allowed us to determine what values to trim
+	-https://github.com/jasonvillanuevagit/cpe476/blob/master/Task_Sketches/encoder_feedback.ino
+	Motor Test: For this test, the right motor spinning about 2% faster than the left. Therefore we had to trim the values of the right motor. 
+	-https://github.com/jasonvillanuevagit/cpe476/blob/master/Task_Sketches/straight_line.ino
 	
 Task 4: Unidirectional & Bidirectional Square Path Experiment - In this task the robot, follows a path comprising of four straight line segments and four pure rotations about the robot's center point, at the corners of the square. The robot's end position visualizes the dead-reckoning error. 
--For this task we had the Romi drive straight for a meter, then with trial and error determined the speed/time it would take in order for the robot to turn a perfect 90 degrees using speed of motorA = -speed of motorB. This worked for us and the robot made a perfect square path.
+-For this task we had the Romi drive straight for a meter, then with trial and error determined the speed/time it would take in order for the robot to turn a perfect 90 degrees using speed of motorA = -speed of motorB. This worked for us and the robot made a perfect square path. 
+    Box Test: For this task Romi performed 4 straight paths with 4 90 degree turns 
+    -https://github.com/jasonvillanuevagit/cpe476/blob/master/Task_Sketches/box_test.ino
 
 Task 5: PID Control - Implement PID control to offset unknown tracking errors. Use supplied K values. You can modify them later. 
--For this task we ran the PID example found here https://gist.github.com/bradley219/5373998. With a few modifications it ran.
-    PID Test:PID program, allowed us to offset unknown tracking errors. 
-    -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/PID/pid.cpp
+-For this task we ran the PID example found here https://gist.github.com/bradley219/5373998. The PID program allowed us to offset unknown tracking errors. With a few modifications to the program it ran.
 
 Task 6: Dead Reckoning - Using the of motor encoder values, calculate the robot's position and pose for the motor basic test. 
--For this task we used https://github.com/purwar2016/DeadReckoning-library and applied it to the motor test. with many modifications we were able to program our Romi board.
+-For this task we used https://github.com/purwar2016/DeadReckoning-library and applied it to the motor test. Many modifications were performed and we were able to program our Romi board
 
 Task 7: Interface IMU: Interface the IMU on the board to get acceleration and gyro values. Create a message including odometry and IMU values and transmit the message to the Host PC and log the data in Rviz. 
--For this task we used https://github.com/pololu/romi-32u4-arduino-library. Acceleration was fine. We did have issues with the gyro values at first, but ended up replacing our board for other purposes. After this the gyro values were fine.
-	Odemetry Test: This Test allowed us to measure the pose of the Romi 
+-For this task we used https://github.com/pololu/romi-32u4-arduino-library. Acceleration was fine. We did have issues with the gyro values at first, but ended up replacing our board for other purposes. After swapping out the Romi32u4 board the gyro values were functioning correctly
+    Odemetry Test: This Test allowed us to measure the pose of the Romi 
     -https://github.com/bkokubun99/CPE-476-Mobile-Robotics/blob/master/Romi-RPi-I2CSlave/odometry.ino
 
 Task 8:
 
 Task 9: Setup your RPI: Use the raspberry pi 3+/4 to setup Raspbian + ROS (Kinetic/Melodic) + OpenCV. 
--For the OS on our RPI3 we installed Ubiquity's https://downloads.ubiquityrobotics.com/pi.html. This made the process very simple. We then expanded the memory, enabled ssh, and made other changes to settings following along in class.
+-For the OS on our RPI3 we installed Ubiquity's https://downloads.ubiquityrobotics.com/pi.html. This made the process very simple. We then expanded the memory, enabled ssh, and made other changes to settings following along in class. 
+Teleop: Ability to remotley control Romi 
+-https://github.com/jasonvillanuevagit/cpe476/blob/master/Task_Sketches/teleop.ino
+Remotely controlling robot
+-https://www.youtube.com/watch?v=uQAZgGNbAnc
